@@ -1,0 +1,330 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/dialog_inset">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:gravity="center"
+        android:layout_marginBottom="16dp">
+
+        <LinearLayout
+            android:id="@+id/volume_down_layout"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:background="?android:attr/selectableItemBackground">
+
+            <ImageView
+                android:layout_width="@dimen/icon_size"
+                android:layout_height="@dimen/icon_size"
+                android:src="@drawable/ic_volume_down"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Volume down"
+                android:textColor="@color/text_color"
+                android:fontFamily="@font/poppins_regular"
+                android:textSize="@dimen/font_size"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/home_screen_layout"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:background="?android:attr/selectableItemBackground">
+
+            <ImageView
+                android:layout_width="@dimen/icon_size"
+                android:layout_height="@dimen/icon_size"
+                android:src="@drawable/ic_home_screen_third" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Home Screen"
+                android:textColor="@color/text_color"
+                android:fontFamily="@font/poppins_regular"
+                android:textSize="@dimen/font_size"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/recent_apps_layout"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:background="?android:attr/selectableItemBackground">
+
+            <ImageView
+                android:layout_width="@dimen/icon_size"
+                android:layout_height="@dimen/icon_size"
+                android:src="@drawable/ic_baseline_receipt_24"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Recent apps"
+                android:textColor="@color/text_color"
+                android:fontFamily="@font/poppins_regular"
+                android:textSize="@dimen/font_size"/>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:gravity="center">
+
+            <LinearLayout
+                android:id="@+id/screen_shot_layout"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:background="?android:attr/selectableItemBackground">
+
+                <ImageView
+                    android:layout_width="@dimen/icon_size"
+                    android:layout_height="@dimen/icon_size"
+                    android:src="@drawable/ic_screenshot_one"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Screenshot"
+                    android:textColor="@color/text_color"
+                    android:fontFamily="@font/poppins_regular"
+                    android:textSize="@dimen/font_size"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/screen_off_layout"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:background="?android:attr/selectableItemBackground">
+
+                <ImageView
+                    android:layout_width="@dimen/icon_size"
+                    android:layout_height="@dimen/icon_size"
+                    android:src="@drawable/ic_screen_off"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Screen off"
+                    android:textColor="@color/text_color"
+                    android:fontFamily="@font/poppins_regular"
+                    android:textSize="@dimen/font_size"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/volume_up_layout"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:background="?android:attr/selectableItemBackground">
+
+                <ImageView
+                    android:layout_width="@dimen/icon_size"
+                    android:layout_height="@dimen/icon_size"
+                    android:src="@drawable/ic_volume_up"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Volume up"
+                    android:textColor="@color/text_color"
+                    android:fontFamily="@font/poppins_regular"
+                    android:textSize="@dimen/font_size"/>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:gravity="center"
+            android:layout_marginBottom="16dp">
+
+            <LinearLayout
+                android:id="@+id/phone_option_layout"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:background="?android:attr/selectableItemBackground">
+
+                <ImageView
+                    android:layout_width="@dimen/icon_size"
+                    android:layout_height="@dimen/icon_size"
+                    android:src="@drawable/ic_phone_option"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Phone Options"
+                    android:textColor="@color/text_color"
+                    android:fontFamily="@font/poppins_regular"
+                    android:textSize="@dimen/font_size"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:visibility="gone">
+
+                <ImageView
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:src="@drawable/ic_home_screen"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Home Screen"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:visibility="gone">
+
+                <ImageView
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:src="@drawable/ic_screenshot_one"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Recent apps"/>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+        <!-- unused -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="16dp"
+            android:visibility="gone">
+            <Button
+                android:id="@+id/taskA"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="screen shot" />
+
+            <Button
+                android:id="@+id/taskB"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Home screen"
+                android:layout_marginStart="8dp"/>
+
+            <Button
+                android:id="@+id/taskC"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Recent Apps"
+                android:layout_marginStart="8dp"/>
+
+            <Button
+                android:id="@+id/taskM"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Task M"
+                android:layout_marginStart="8dp"
+                android:visibility="gone"/>
+            <Button
+                android:id="@+id/taskN"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Task N"
+                android:layout_marginStart="8dp"
+                android:visibility="gone"/>
+            <Button
+                android:id="@+id/taskO"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Task O"
+                android:layout_marginStart="8dp"/>
+
+            <Button
+                android:id="@+id/taskD"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Task D" />
+
+            <Button
+                android:id="@+id/taskE"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Task E"
+                android:layout_marginStart="8dp"/>
+
+            <Button
+                android:id="@+id/taskF"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Task F"
+                android:layout_marginStart="8dp"/>
+
+            <Button
+                android:id="@+id/taskX"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Task X"
+                android:layout_marginStart="8dp"/>
+            <Button
+                android:id="@+id/taskY"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Task Y"
+                android:layout_marginStart="8dp"/>
+
+            <Button
+                android:id="@+id/taskZ"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Task Z"
+                android:layout_marginStart="8dp"/>
+        </LinearLayout>
+
+    </LinearLayout>
+

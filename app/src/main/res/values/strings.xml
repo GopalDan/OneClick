@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">OneClick</string>
+    <string name="service_description">It is service description</string>
+    <string name="service_summary">It goes to service summary</string>
+</resources>

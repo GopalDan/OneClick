@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Key Permissions"
+            android:textAlignment="center"
+            android:textSize="18sp"
+            android:textColor="@color/recommended_black"
+            android:fontFamily="@font/poppins_medium"
+            android:layout_marginTop="@dimen/side_margin"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="8dp"
+            android:layout_weight="1">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.6"
+                android:text="Draw over top"
+                android:gravity="center"
+                android:textSize="16sp"
+                android:textColor="@color/recommended_light_black"
+                android:fontFamily="@font/poppins_regular"/>
+
+            <androidx.appcompat.widget.SwitchCompat
+                android:id="@+id/draw_over_top_switch"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.4"
+                android:layout_marginEnd="@dimen/side_margin"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="8dp"
+            android:layout_weight="1">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.6"
+                android:text="Accessibility Service"
+                android:gravity="center"
+                android:textSize="16sp"
+                android:textColor="@color/recommended_light_black"
+                android:fontFamily="@font/poppins_regular"/>
+
+            <androidx.appcompat.widget.SwitchCompat
+                android:id="@+id/accessibility_service_switch"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.4"
+                android:layout_marginEnd="@dimen/side_margin"/>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/grey_two"
+            android:layout_marginStart="@dimen/side_margin"
+            android:layout_marginEnd="@dimen/side_margin"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="8dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="In order to use following features, you have to give the permission!"
+            android:textAlignment="center"
+            android:textColor="@color/recommended_black"
+            android:fontFamily="@font/poppins_medium"
+            android:textSize="18sp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="8dp"
+            android:weightSum="1">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.6"
+                android:text="Screen off feature"
+                android:gravity="center"
+                android:textSize="16sp"
+                android:textColor="@color/recommended_light_black"
+                android:fontFamily="@font/poppins_regular"/>
+            <androidx.appcompat.widget.SwitchCompat
+                android:id="@+id/screen_off_switch"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.4"
+                android:layout_marginEnd="@dimen/side_margin"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="8dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.6"
+                android:text="Screen shot feature"
+                android:gravity="center"
+                android:textSize="16sp"
+                android:textColor="@color/recommended_light_black"
+                android:fontFamily="@font/poppins_regular"/>
+
+            <androidx.appcompat.widget.SwitchCompat
+                android:id="@+id/screen_shot_switch"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.4"
+                android:layout_marginEnd="@dimen/side_margin"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="find"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/side_margin"
+        android:visibility="gone"/>
+
+</RelativeLayout>
